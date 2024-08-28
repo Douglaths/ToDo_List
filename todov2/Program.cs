@@ -9,16 +9,17 @@ namespace todov2
             // Crear una instancia de TaskManager para gestionar las tareas
             var taskManager = new BLL.TaskManager();
 
+            Console.WriteLine($"{Environment.NewLine} ¡Bienvenido a Q10 TO DO LIST! {Environment.NewLine} ");
+
             while (true) // Ciclo infinito para mantener el menú activo hasta que se seleccione salir
             {
-                Console.Clear();
                 Console.WriteLine("Lista de Tareas");
-                Console.WriteLine("1. Agregar Tarea");
-                Console.WriteLine("2. Listar Tareas");
-                Console.WriteLine("3. Marcar Tarea como Completada");
+                Console.WriteLine("1. Agregar una Tarea");
+                Console.WriteLine("2. Listar las Tareas");
+                Console.WriteLine("3. Marcar una Tarea como Completada");
                 Console.WriteLine("4. Eliminar Tarea");
                 Console.WriteLine("5. Salir");
-                Console.Write("Selecciona una opción: ");
+                Console.Write("¿Qué deseas hacer hoy?:");
 
                 // Leer la opción seleccionada por el usuario
                 var choice = Console.ReadLine();
@@ -32,7 +33,7 @@ namespace todov2
                     case "2":
                         // Listar todas las tareas
                         taskManager.ListTasks();
-                        Console.WriteLine("Estas son las tareas que tienes. Presiona cualquier tecla para continuar...");
+                        Console.WriteLine("Estas son las tareas que tienes. Presiona cualquier tecla para regresar al menu principal...");
                         Console.ReadKey();
                         break;
                     case "3":
@@ -47,7 +48,7 @@ namespace todov2
                         break;
                     case "5":
                         // Salir del programa
-                        Console.WriteLine("¡Gracias por usar nuestro TO-DO LIST! ¡Esperamos verte pronto :)");
+                        Console.WriteLine("¡Gracias por usar nuestro TO-DO LIST! ¡Esperamos verte pronto! :)");
                         Console.ReadKey();
                         return;
                     default:
@@ -56,6 +57,7 @@ namespace todov2
                         Console.ReadKey();
                         break;
                 }
+                Console.Clear();
             }
         }
     }
