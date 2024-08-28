@@ -5,3 +5,10 @@ C:\Users\Douglaths\source\repos\todov2\obj\Debug\todov2.csproj.AssemblyReference
 C:\Users\Douglaths\source\repos\todov2\obj\Debug\todov2.csproj.CoreCompileInputs.cache
 C:\Users\Douglaths\source\repos\todov2\obj\Debug\todov2.exe
 C:\Users\Douglaths\source\repos\todov2\obj\Debug\todov2.pdb
+C:\Users\Douglaths\Documents\PruebaTecnica\ToDo_List\todov2\bin\Debug\todov2.exe.config
+C:\Users\Douglaths\Documents\PruebaTecnica\ToDo_List\todov2\bin\Debug\todov2.exe
+C:\Users\Douglaths\Documents\PruebaTecnica\ToDo_List\todov2\bin\Debug\todov2.pdb
+C:\Users\Douglaths\Documents\PruebaTecnica\ToDo_List\todov2\obj\Debug\todov2.csproj.AssemblyReference.cache
+C:\Users\Douglaths\Documents\PruebaTecnica\ToDo_List\todov2\obj\Debug\todov2.csproj.CoreCompileInputs.cache
+C:\Users\Douglaths\Documents\PruebaTecnica\ToDo_List\todov2\obj\Debug\todov2.exe
+C:\Users\Douglaths\Documents\PruebaTecnica\ToDo_List\todov2\obj\Debug\todov2.pdb

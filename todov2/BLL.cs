@@ -4,32 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace todov2
 {
     internal class BLL
     {
-
+        // Clase para representar una tarea
         public class Task
         {
-            public string Description { get; set; }
-            public DateTime? DueDate { get; set; }
-            public bool IsCompleted { get; set; }
+            public string Description { get; set; } // Descripción de la tarea
+            public DateTime? DueDate { get; set; }  // Fecha límite opcional para completar la tarea
+            public bool IsCompleted { get; set; }   // Indica si la tarea está completada
         }
 
-
+        // Clase que gestiona las tareas y contiene la lógica de negocio
         public class TaskManager
         {
-
+            // Lista privada para almacenar las tareas
             private readonly List<Task> _tasks = new List<Task>();
 
+            // Método para agregar una nueva tarea
             public void AddTask()
             {
-                Console.Write("Enter task description: ");
+                Console.Write("Ingrese la descripción de la tarea: ");
                 var description = Console.ReadLine();
-                Console.Write("Enter due date (format YYYY-MM-DD): ");
+                Console.Write("Ingrese la fecha límite (formato AAAA-MM-DD): ");
                 var dueDateInput = Console.ReadLine();
                 DateTime? dueDate = null;
 
+                // Validación de la fecha límite proporcionada
                 while (!string.IsNullOrEmpty(dueDateInput))
                 {
                     if (DateTime.TryParse(dueDateInput, out DateTime parsedDate))
@@ -40,10 +43,12 @@ namespace todov2
                     else
                     {
                         Console.WriteLine("Fecha no válida proporcionada.");
-                        Console.Write("Enter due date (format YYYY-MM-DD): ");
-                        dueDateInput = Console.ReadLine();
+                        Console.Write("Ingrese la fecha límite (formato AAAA-MM-DD): ");
+                        dueDateInput = Console.ReadLine(); //En este fragmento esperamos que se introduzca una fecha o, en su defecto, se deje vacio/null
                     }
                 }
+
+                // Creación de una nueva tarea y adición a la lista
                 var task = new Task
                 {
                     Description = description,
@@ -52,51 +57,49 @@ namespace todov2
                 };
 
                 _tasks.Add(task);
-                Console.WriteLine("Task added. Press any key to continue...");
-                
+                Console.WriteLine("Tarea agregada. Presiona cualquier tecla para continuar...");
             }
 
+            // Método para listar todas las tareas
             public void ListTasks()
             {
-                Console.WriteLine("Tasks:");
-                foreach (var task in _tasks.Select((t, i) => new { Task = t, Index = i }))
+                Console.WriteLine("Tareas:");
+                foreach (var task in _tasks.Select((t, i) => new { Task = t, Index = i })) //Se usa el foreach para listar cada una de las tareas de la TO DO list
                 {
-                    Console.WriteLine($"{task.Index + 1}. {task.Task.Description} (Due: {task.Task.DueDate?.ToShortDateString() ?? "N/A"}) - {(task.Task.IsCompleted ? "Completed" : "Pending")}");
+                    Console.WriteLine($"{task.Index + 1}. {task.Task.Description} (Fecha límite: {task.Task.DueDate?.ToShortDateString() ?? "N/A"}) - {(task.Task.IsCompleted ? "Completada" : "Pendiente")}");
                 }
-               
-                
             }
 
+            // Método para marcar una tarea como completada
             public void MarkTaskAsCompleted()
             {
                 ListTasks();
-                Console.Write("Enter the number of the task to mark as completed: ");
+                Console.Write("Ingrese el número de la tarea para marcar como completada: ");
                 if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= _tasks.Count)
                 {
                     _tasks[index - 1].IsCompleted = true;
-                    Console.WriteLine("Task marked as completed. Press any key to continue...");
+                    Console.WriteLine("Tarea marcada como completada. Presiona cualquier tecla para continuar...");
                 }
                 else
                 {
-                    Console.WriteLine("Invalid task number. Press any key to continue...");
+                    Console.WriteLine("Número de tarea inválido. Presiona cualquier tecla para continuar...");
                 }
-                
             }
 
+            // Método para eliminar una tarea
             public void RemoveTask()
             {
                 ListTasks();
-                Console.Write("Enter the number of the task to remove: ");
+                Console.Write("Ingrese el número de la tarea para eliminar: ");
                 if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= _tasks.Count)
                 {
                     _tasks.RemoveAt(index - 1);
-                    Console.WriteLine("Task removed. Press any key to continue...");
+                    Console.WriteLine("Tarea eliminada. Presiona cualquier tecla para continuar...");
                 }
                 else
                 {
-                    Console.WriteLine("Invalid task number. Press any key to continue...");
+                    Console.WriteLine("Número de tarea inválido. Presiona cualquier tecla para continuar...");
                 }
-                
             }
         }
     }

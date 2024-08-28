@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace todov2
 {
@@ -10,46 +6,53 @@ namespace todov2
     {
         static void Main(string[] args)
         {
-
+            // Crear una instancia de TaskManager para gestionar las tareas
             var taskManager = new BLL.TaskManager();
 
-            while (true)
+            while (true) // Ciclo infinito para mantener el menú activo hasta que se seleccione salir
             {
                 Console.Clear();
-                Console.WriteLine("Todo List");
-                Console.WriteLine("1. Add Task");
-                Console.WriteLine("2. List Tasks");
-                Console.WriteLine("3. Mark Task as Completed");
-                Console.WriteLine("4. Remove Task");
-                Console.WriteLine("5. Exit");
-                Console.Write("Select an option: ");
+                Console.WriteLine("Lista de Tareas");
+                Console.WriteLine("1. Agregar Tarea");
+                Console.WriteLine("2. Listar Tareas");
+                Console.WriteLine("3. Marcar Tarea como Completada");
+                Console.WriteLine("4. Eliminar Tarea");
+                Console.WriteLine("5. Salir");
+                Console.Write("Selecciona una opción: ");
 
+                // Leer la opción seleccionada por el usuario
                 var choice = Console.ReadLine();
                 switch (choice)
                 {
                     case "1":
+                        // Agregar una nueva tarea
                         taskManager.AddTask();
-                        Console.ReadKey();
+                        Console.ReadKey(); // Pausar hasta que el usuario presione una tecla
                         break;
                     case "2":
+                        // Listar todas las tareas
                         taskManager.ListTasks();
-                        Console.WriteLine("Estas son las tareas que tienes. Press any key to continue...");
+                        Console.WriteLine("Estas son las tareas que tienes. Presiona cualquier tecla para continuar...");
                         Console.ReadKey();
                         break;
                     case "3":
+                        // Marcar una tarea como completada
                         taskManager.MarkTaskAsCompleted();
                         Console.ReadKey();
                         break;
                     case "4":
+                        // Eliminar una tarea de la lista
                         taskManager.RemoveTask();
                         Console.ReadKey();
                         break;
                     case "5":
-                        Console.WriteLine("¡Gracias por usar nuestro TO-DO LIST! Esperamos verte pronto :)");
+                        // Salir del programa
+                        Console.WriteLine("¡Gracias por usar nuestro TO-DO LIST! ¡Esperamos verte pronto :)");
                         Console.ReadKey();
                         return;
                     default:
-                        Console.WriteLine("Invalid option. Press any key to try again...");
+                        // Mensaje de error si el usuario selecciona una opción inválida
+                        Console.WriteLine("Opción inválida. Presiona cualquier tecla para intentar nuevamente...");
                         Console.ReadKey();
                         break;
                 }

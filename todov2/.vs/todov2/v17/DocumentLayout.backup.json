@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|c:\\users\\douglaths\\documents\\pruebatecnica\\todo_list\\todov2\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|solutionrelative:bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|solutionrelative:dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|solutionrelative:dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|c:\\users\\douglaths\\documents\\pruebatecnica\\todo_list\\todov2\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|solutionrelative:bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +22,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BLL.cs",
               "DocumentMoniker": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\BLL.cs",
               "RelativeDocumentMoniker": "BLL.cs",
               "ToolTip": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\BLL.cs",
               "RelativeToolTip": "BLL.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAABwAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAA0wGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T05:54:41.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "DAL.cs",
               "DocumentMoniker": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\DAL.cs",
               "RelativeDocumentMoniker": "DAL.cs",
               "ToolTip": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\DAL.cs",
               "RelativeToolTip": "DAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T05:54:26.984Z"
+              "WhenOpened": "2024-08-28T05:54:26.984Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -57,9 +58,10 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAACMAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAADEAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T05:53:16.537Z"
+              "WhenOpened": "2024-08-28T05:53:16.537Z",
+              "EditorCaption": ""
             }
           ]
         }
