@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|c:\\users\\douglaths\\documents\\pruebatecnica\\todo_list\\todov2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|solutionrelative:bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|c:\\users\\douglaths\\documents\\pruebatecnica\\todo_list\\todov2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{483ABC9C-815A-453E-A5AF-D15172BEFB33}|todov2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BLL.cs",
               "DocumentMoniker": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\BLL.cs",
               "RelativeDocumentMoniker": "BLL.cs",
@@ -30,17 +30,18 @@
               "RelativeToolTip": "BLL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T05:54:41.82Z"
+              "WhenOpened": "2024-08-28T05:54:41.82Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAAADsAAAAgAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Douglaths\\Documents\\PruebaTecnica\\ToDo_List\\todov2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T05:53:16.537Z",
               "EditorCaption": ""
